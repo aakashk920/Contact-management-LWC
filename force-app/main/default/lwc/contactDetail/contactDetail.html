@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Contact Details" if:true={contact}>
+        <div class="slds-p-around_medium">
+            <lightning-record-form
+            record-id={contact.id}
+            object-api-name="Contact"
+            layout-type="Full"
+            mode="view"
+            columns="2"
+            onsuccess={handleSuccess}>
+            ></lightning-record-form>
+        </div>
+    </lightning-card>
+</template>
